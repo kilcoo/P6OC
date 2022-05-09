@@ -13,6 +13,6 @@ router.get('/sauces/:id', auth, stuffCtrl.findOneSauce);
 router.put('/sauces/:id', auth, multer, stuffCtrl.modifyThing);
 router.delete('/sauces/:id', auth, stuffCtrl.deleteThing);
 
-router.put('/sauces/:id/like' , auth, like.likeDislike);
+router.post('/sauces/:id/like' , auth, like.likeDislike);
 
 module.exports = router;
